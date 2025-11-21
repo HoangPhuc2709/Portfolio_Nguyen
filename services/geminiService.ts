@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
 const SYSTEM_INSTRUCTION = `
 Bạn là một trợ lý ảo chuyên nghiệp (AI Consultant) được tích hợp vào Portfolio của Kỹ sư xây dựng Nguyễn Hoàng Nguyên.
